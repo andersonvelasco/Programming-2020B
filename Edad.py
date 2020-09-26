@@ -1,4 +1,4 @@
-#Script:sumas
+#Script:Edad
 '''
 Teniendo en cuenta el año actual, solicite a un usuario
 por consola: el nombre y el año de nacimiento, y le muestre por pantalla un mensaje

@@ -1,4 +1,4 @@
-#Script:sumas
+#Script:Calculadora
 '''
 Programa que, dadas dos variables N1 = 5 y N2 = 6, permita realizar
 las operaciones aritméticas básicas (suma, resta, multiplicación, división) y visualice
@@ -10,7 +10,7 @@ print("de las operaciones aritmeticas básicas ")
 print("(suma, resta, multiplicación, división)")
 print("Ingrese n1: ")
 n1=float(input())
-print("Ingrese n1: ")
+print("Ingrese n2: ")
 n2=float(input())
 
 #PROCESS
