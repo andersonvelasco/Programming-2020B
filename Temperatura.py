@@ -1,6 +1,6 @@
 #Script:Temperatura
 '''
-programa que permita recibir por consola el valor de la temperatura
+Programa que permita recibir por consola el valor de la temperatura
 en grados centígrados, debe convertir este valor a grados Kelvin, y finalmente,
 visualizar el resultado por pantalla. Considere la siguiente fórmula: °K = °C + 273.15.
 '''
