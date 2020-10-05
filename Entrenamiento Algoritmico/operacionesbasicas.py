@@ -9,16 +9,27 @@ print ("[2] Restar")
 print ("[3] Multiplicar")
 print ("[4] Dividir")
 op=int(input("Seleccione la operación : "))
-num1=int(input("Ingrese primer número: "))
-num2=int(input("Ingrese segundo número: "))
-
-if op == 1 or op <= 5 and op >=0: 
+if op==1:
+    print ("[1] SUMA")
+    num1=int(input("Ingrese primer número: "))
+    num2=int(input("Ingrese segundo número: "))
     print(num1," + ", num2," = ",num1+num2)
-    if op == 2:
-        print(num1," - ", num2," = ",num1-num2)
-        if op == 3:
-            print(num1," X ", num2," = ",num1*num2)
-            if op == 4:
-                print(num1," / ", num2," = ",num1/num2)              
+elif op==2:
+    print ("[2] RESTA")
+    num1=int(input("Ingrese primer número: "))
+    num2=int(input("Ingrese segundo número: "))
+    print(num1," - ", num2," = ",num1-num2)
+elif op==3:
+    print ("[3] Multiplicación")
+    num1=int(input("Ingrese primer número: "))
+    num2=int(input("Ingrese segundo número: "))
+    print(num1," X ", num2," = ",num1*num2)
+elif op==4:
+    print ("[4] División")
+    num1=int(input("Ingrese primer número: "))
+    num2=int(input("Ingrese segundo número: "))
+    print(num1," / ", num2," = ",num1/num2)
+       
 else :
-    print("No selecciono la operación valida para operar los numeros")
+    print("Operación no encontrada")
+    
