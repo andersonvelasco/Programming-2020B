@@ -1,7 +1,7 @@
 '''Script operaciones aritméticas básicas'''
 
 import os
-os.system("cls") # thsi kine let you clear screen.
+os.system("cls") # this line let you clear screen.
 
 print ("Programa para operaciones aritmeticas básicas")
 print ("[1] Sumar")
