@@ -3,72 +3,76 @@
 import os
 os.system("cls") # this line let you clear screen.
 
-'''print ("Programa para operaciones aritmeticas básicas")
+print ("Calculadora Básica")
+
+num1=int(input("Ingrese primer número: "))
+num2=int(input("Ingrese segundo número: "))
+    
+print(":::: Menú ::::")
 print ("[1] Sumar")
 print ("[2] Restar")
 print ("[3] Multiplicar")
-print ("[4] Dividir")'''
-print ("[1] Operar")
-print ("Cualquier número para Salir")
-i=int(input("Digite operador: "))
-while i==1:
-    print("Operadores")
-    print ("[1] Sumar")
-    print ("[2] Restar")
-    print ("[3] Multiplicar")
-    print ("[4] Dividir")
-    print ("[5] Salir")
-    op=int(input("Digite Operación: "))     
+print ("[4] Dividir")
+
+while status:
+    op = int(input("Digite Operación: "))
+    if op >= 1 and op <=4 :
+        status = False
+    else:
+        tried = tried + 1
+        print("tried No. ", tried)
+        if tried == 3:
+            print("")
+            key = input("Presione cualquier tecla")
+            break
+        status = True         
     if op==1:
         print ("[1] SUMA")
-        num1=int(input("Ingrese primer número: "))
-        num2=int(input("Ingrese segundo número: "))
-        print(num1," + ", num2," = ",num1+num2) 
+        calcular = num1+num2
+        print(num1," + ", num2," = ",calcular) 
     elif op==2:
         print ("[2] RESTA")
-        num1=int(input("Ingrese primer número: "))
-        num2=int(input("Ingrese segundo número: "))
-        print(num1," - ", num2," = ",num1-num2)
+        calcular=num1-num2
+        print(num1," - ", num2," = ",calcular)
     elif op==3:
         print ("[3] Multiplicación")
-        num1=int(input("Ingrese primer número: "))
-        num2=int(input("Ingrese segundo número: "))
-        print(num1," X ", num2," = ",num1*num2)
+        calcular=num1*num2
+        print(num1," - ", num2," = ",calcular)
     elif op==4:
         print ("[4] División")
-        num1=int(input("Ingrese primer número: "))
-        num2=int(input("Ingrese segundo número: "))
-        print(num1," / ", num2," = ",num1/num2)
-    elif op==5:
-        i=i+1  
+        calcular=num1-num2
+        print(num1," / ", num2," = ",calcular)
     else :
         print("Operación no encontrada")
-    i=i
 print("Fin ejecución")
+#-----------------------------------------
 
-
-'''op=int(input("Digite operación"))
+'''
+print ("Programa para operaciones aritmeticas básicas")
+num1=int(input("Ingrese primer número: "))
+num2=int(input("Ingrese segundo número: "))
+print (":::: Menú ::::")
+print ("[1] Sumar")
+print ("[2] Restar")
+print ("[3] Multiplicar")
+print ("[4] Dividir")
+op=int(input("Digite operación"))
 if op==1:
     print ("[1] SUMA")
-    num1=int(input("Ingrese primer número: "))
-    num2=int(input("Ingrese segundo número: "))
-    print(num1," + ", num2," = ",num1+num2)
+    calcular=num1+num2
+    print(num1," + ", num2," = ",calcular)
 elif op==2:
     print ("[2] RESTA")
-    num1=int(input("Ingrese primer número: "))
-    num2=int(input("Ingrese segundo número: "))
-    print(num1," - ", num2," = ",num1-num2)
+    calcular=num1-num2
+    print(num1," - ", num2," = ",calcular)
 elif op==3:
     print ("[3] Multiplicación")
-    num1=int(input("Ingrese primer número: "))
-    num2=int(input("Ingrese segundo número: "))
-    print(num1," X ", num2," = ",num1*num2)
+    calcular=num1*num2
+    print(num1," - ", num2," = ",calcular)
 elif op==4:
     print ("[4] División")
-    num1=int(input("Ingrese primer número: "))
-    num2=int(input("Ingrese segundo número: "))
-    print(num1," / ", num2," = ",num1/num2)
-       
+    calcular=num1-num2
+    print(num1," / ", num2," = ",calcular)
 else :
     print("Operación no encontrada")
 '''
