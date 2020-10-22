@@ -19,26 +19,26 @@ num=int(input("Ingrese No. : "))
 i=1
 contp=1
 conti=1
-acump=0
-acumi=0
-acumt=0
-while i<=num :#i<11
-    #multiplicacion=tabla*i
-    acumt=acumt+i
-    if i % 2 ==0:
+acump=0 #Acumulador inicializado en 0 para guardar y sumar los no. pares
+acumi=0 #Acumulador inicializado en 0 para guardar y sumar los no. impares
+acumt=0 #Acumulador inicializado en 0 para guardas la suma de todos los numeros OPCIONAL
+while i<=num :# si i es menos o igual a num (No. digitado por el usuario, entonces ingresa al ciclo)
+    acumt=acumt+i #inicia el acumulador total a registrar los valores de i -- OPCIONAL
+    if i % 2 ==0: #compara si el modulo de i es igual a dos, si cumple, ingresa por verdadero e imprime
         print("El No. listado es : ",i," y es par")
-        contp=contp+1
-        acump=acump+i
+        contp=contp+1 #contador para los numeros pares, incrementa en 1 cada vez que pasa por el ciclo
+        acump=acump+i #inicia el acumulador total a registrar los valores de i pares
     else:
         print("El No. listado es : ",i," y es impar")
-        conti=conti+1
-        acumi=acumi+i
-    i=i+1
-print("La cantidad de números generados es: ", num)
-print("La cantidad de números generados es: ", i - 1)
+        conti=conti+1 #contador para los numeros impares, incrementa en 1 cada vez que pasa por el ciclo
+        acumi=acumi+i #inicia el acumulador total a registrar los valores de i impares
+    i=i+1 #contador encargado de romper el ciclo cuando 
+print("La cantidad de números generados op 1 es: ", num)
+print("La cantidad de números generados op 2 es: ", i - 1)
 print("La cantidad de números pares es : ", contp - 1)
 print("La cantidad de números impares es : ", conti - 1)
 print("La suma de los no. pares es: ",acump)
 print("La suma de los no. pares es: ",acumi)
-print("La suma de todos los números es : ",acumt)
+print("La suma de todos los números op 1es : ",acump+acumi)#== acumt
+print("La suma de todos los números op 2 es : ",acumt)# == acumi+acump -- OPCIONAL
 
