@@ -1,8 +1,13 @@
 import os
-os.system("cls")
-from Functions import *
-
+from login import *
+from categorias import *
+from proveedores import *
+from productos import *
 #Main
-menu_login()
+os.system("cls")
+login()
+categorias()
+proveedores()
+productos()
 
 
