@@ -3,11 +3,13 @@ from login import *
 from categorias import *
 from proveedores import *
 from productos import *
+from clientes import *
 #Main
 os.system("cls")
 login()
-categorias()
+categoria
 proveedores()
 productos()
+clientes()
 
 

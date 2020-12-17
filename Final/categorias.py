@@ -11,6 +11,7 @@ def categorias ():
   print("[4.] MODIFICAR CATEGORIA")
   print("[5.] ELIMINAR CATEGORIA")
   print("[6.] VOLVER AL MENU")
+  print("[7.] SALIR")
   
   op = input(".:: DIGITE UNA OPCION: ")
 
@@ -27,8 +28,8 @@ def categorias ():
     
   elif op == '6':
     categorias()
-  else :
-    print("::: Vuelve pronto :::")
+  elif op == '7':
+    salir()
     
 def ingresar_categoria():
   os.system('cls')
@@ -104,3 +105,7 @@ def eliminar_categoria():
 	list_categorias.remove(elim)
 	key = input("	Persione cualquier tecla para volver al menu")
 	categorias()
+
+def salir ():
+    print("Hasta Luego, vuelve pronto, eres importante, cuidate")
+    sys.exit()

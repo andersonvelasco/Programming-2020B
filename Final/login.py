@@ -3,24 +3,25 @@ import sys
 from categorias import *
 from proveedores import *
 from productos import *
+from clientes import *
 Datos = []
 Email = []
 
 def login():
- os.system("cls")
- print(":::: MENU ACCESO ::::")
- print("[1.] INGRESAR")
- print("[2.] CREAR CUENTA DE USUARIO")
- print("[3.] SALIR")
- op = input("SELECCIONA UNA OPCION: ")
- if op == '1' :
-    ingresar()
- elif op == '2' :
-     registrar()
- elif op == '3' :
-      salir()
- else :
-    print("::: Vuelve pronto :::")
+    os.system("cls")
+    print(":::: MENU ACCESO ::::")
+    print("[1.] INGRESAR")
+    print("[2.] CREAR CUENTA DE USUARIO")
+    print("[3.] SALIR")
+    op = input("SELECCIONA UNA OPCION: ")
+    if op == '1' :        
+        ingresar()
+    elif op == '2' :
+        registrar()
+    elif op == '3' :
+        salir()
+    else :
+        print("::: Vuelve pronto :::")
 
 def ingresar():
     os.system("cls")
@@ -98,4 +99,5 @@ def registrar ():
             Datos.append([nombres, apellidos, celular, email, usuario, contraseña])
  login()
 def salir ():
-	  sys.exit()
+    print("Hasta Luego, vuelve pronto, eres importante, cuidate")
+    sys.exit()
